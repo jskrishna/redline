@@ -26,6 +26,16 @@ const routes = [
     name: "Part list",
     component: () => import("../views/PartList.vue"),
   },
+  {
+    path: '/edit-vehicle/:id',
+    name: "Edit Vehicle",
+    component: () => import("../views/EditVehicle.vue"),
+  },
+  {
+    path: '/add-parts',
+    name: "Add Parts",
+    component: () => import("../views/AddParts.vue"),
+  },
 ];
 
 const router = new VueRouter({

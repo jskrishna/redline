@@ -1,6 +1,11 @@
 <template>
   <div class="part-list">
-    <h1>{{ $route.name }}</h1>
+     <div class="page-header">
+          <h1>{{ $route.name }}</h1>
+            <div class="add-btn">
+                <router-link class="btn custom-btn" to="/add-parts">Add Parts</router-link>
+            </div>
+          </div>
       <table
       id="example"
       class="display responsive nowrap"
@@ -15,6 +20,9 @@
           <th>Description</th>
           <th>Part Number</th>
           <th>Vin</th>
+          <th>Recommended Sales $</th>
+          <th>Part Grade</th>
+          <th>Warranty</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -26,7 +34,10 @@
                     <td>{{item.Year_Make_Model}}</td>
           <td>{{item.$Const}}</td>
           <td>{{item.Parts}}</td>
-          <td>{{item.Parts_Value}}</td>
+          <td><b-badge variant="danger">{{item.Parts_Value}}</b-badge></td>
+          <td>{{item.Recommended_Sales}}</td>
+          <td>{{item.Part_Grade}}</td>
+          <td>{{item.Warranty}}</td>
           <td>
             <ul class="action-list">
               <li>
@@ -114,21 +125,21 @@ export default {
    data () {
   return{
      items: [
-       {id:"1",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"2",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"3",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"4",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"5",Stock:"0155220",Year_Make_Model:"2020",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-        {id:"1",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"2",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"3",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"4",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"5",Stock:"0155220",Year_Make_Model:"2020",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-        {id:"1",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"2",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"3",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"4",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
-       {id:"5",Stock:"0155220",Year_Make_Model:"2020",$Const:"$2500",Parts:"320",Parts_Value:"$550"},
+       {id:"1",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"2",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"3",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"4",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"5",Stock:"0155220",Year_Make_Model:"2020",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+        {id:"1",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"2",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"3",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"4",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"5",Stock:"0155220",Year_Make_Model:"2020",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+        {id:"1",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"2",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"3",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"4",Stock:"0155220",Year_Make_Model:"2014",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
+       {id:"5",Stock:"0155220",Year_Make_Model:"2020",$Const:"$2500",Parts:"320",Parts_Value:"$550",Recommended_Sales:"$520", Part_Grade:"A",Warranty:"15 days"},
         ],
   }
 },

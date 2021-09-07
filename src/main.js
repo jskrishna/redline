@@ -11,7 +11,9 @@ import "./assets/css/datatable.responsive.css";
 import "./assets/js/jquery";
 import "./assets/js/jquery.dataTable";
 import "./assets/js/dataTable.responsive";
-
+import VueFormWizard from "vue-form-wizard";
+import "vue-form-wizard/dist/vue-form-wizard.min.css";
+Vue.use(VueFormWizard);
 
 Vue.config.productionTip = false;
 

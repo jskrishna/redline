@@ -1,7 +1,6 @@
 <template>
   <div class="dashboard-page">
     <h1>{{ $route.name }}</h1>
-  
   </div>
 </template>
 
@@ -11,6 +10,6 @@ import $ from "jquery";
 export default {
   mounted() {
     $("#example").DataTable();
-  },
+  }
 };
 </script>

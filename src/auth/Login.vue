@@ -7,7 +7,7 @@
         </a>
       </div>
       <div class="login-box">
-        <h1>{{ $route.name }}</h1>
+        <!-- <h1>{{ $route.name }}</h1> -->
         <div class="login-form">
           <b-form>
             <b-form-group
