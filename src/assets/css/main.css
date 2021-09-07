@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+body {
+    background: rgb(24 84 29 / 8%);
+}
+
+/* login css */
+.login-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.login-header {
+    padding-bottom: 30px;
+}
+.login-header a{
+    display: block;
+}
+
+.login-header img {
+    max-width: 230px;
+    height: auto;
+    width: 100%;
+}
+.login-box {
+    padding: 35px 50px 50px;
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 10px;
+    background: #fff;
+}
+.login-box h1 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30px;
+    color: #18541d;
+    font-weight: 600;
+}
+.form-group label {
+    font-size: 14px;
+}
+.form-control {
+    font-size: 14px;
+    height: 45px;
+}
+.form-control:focus {
+   outline: none;
+   border-color: #ced4da;
+   box-shadow: none;
+}
+.custom-btn {
+    background: #18541d;
+    padding: 5px 30px;
+    min-width: 100px;
+    height: 45px;
+    border: 1px solid #18541d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-btn:hover {
+    background: #0f3613;
+    color: #fff;
+    border-color: #0f3613;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.text-center {
+    text-align: center;
+}
+.text-center .custom-btn{
+   margin: auto;
+}
+
+/* dashboard css */
+.wrapper {
+    margin-left: 300px;
+    padding: 30px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wrapper>.card {
+    padding: 30px;
+    border: 0;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.action-list li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.action-list svg {
+    width: 30px;
+}
+.action-list svg {
+    width: 100%;
+    max-width: 20px;
+}
+.act-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.view-icon {
+    background: rgb(76 174 79 / 15%);
+}
+.view-icon svg {
+   fill: #4cae4f;;
+}
+
+.edit-icon {
+    background: rgb(91 192 222 / 15%);
+}
+.edit-icon svg {
+   fill: rgb(91 192 222);
+}
+.add-icon {
+    background: rgb(240 173 78 / 15%);
+}
+.add-icon svg {
+   fill: rgb(240 173 78);
+}
+.dtr-data {
+    display: block;
+}
+.action-list {
+    margin: 0 -5px !important;
+}
+
+/* car list page */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 30px;
+}
