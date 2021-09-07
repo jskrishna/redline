@@ -3,6 +3,59 @@ body {
     background: rgb(24 84 29 / 8%);
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+/* sidebar css */
+.navbar-brand {
+    width: 100%;
+    display: block;
+    padding: 40px 20px;
+  }
+  .navbar-brand img {
+    max-width: 240px;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background: #fff;
+  }
+  .main-nav {
+    height: calc(100vh - 220px);
+    overflow: auto;
+  }
+  .main-nav .nav-link {
+    color: #000;
+    font-weight: 600;
+    padding: 20px;
+  }
+  .main-nav .nav-link img {
+    width: 23px;
+    margin-right: 15px;
+  }
+  .nav-item.log-out {
+    padding: 0 20px;
+  }
+  .nav-item.log-out a {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    background: #18541d;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
 /* login css */
 .login-inner {
     display: flex;
@@ -141,7 +194,151 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 0 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
 }
 .wizard-header{
     display: none !important;
   }
+
+/* table css */
+.custom-table thead th {
+    background: rgb(38 102 43 / 10%);
+    color: #26662b;
+}
+
+.custom-table table.dataTable tbody th, table.dataTable tbody td {
+    padding: 15px 25px;
+}
+.custom-table table.dataTable thead th, table.dataTable thead td {
+    padding: 15px 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.custom-table table.dataTable.no-footer {
+    border-bottom: 1px solid #e5e5e5;
+}
+.custom-table #example_wrapper .row:first-child {
+    padding: 25px;
+}
+.custom-table #example_wrapper .row:first-child .col-md-6:first-child {
+    display: none;
+}
+.custom-table .dataTables_wrapper .dataTables_filter {
+    text-align: left;
+    padding-bottom: 20px;
+}
+.previous, .next {
+    border: 0 !important;
+}
+.previous:hover, .next:hover {
+    background: none !important;
+}
+.custom-table #example_wrapper .row:last-child {
+    padding: 10px;
+}
+.custom-table #example_wrapper .row:last-child .col-md-5:first-child {
+    display: none;
+}
+.custom-table .pagination li {
+    padding: 5px !important;
+}
+.custom-table table.dataTable {
+    font-size: 14px;
+}
+.custom-table .page-item .page-link {
+    color: #000;
+    background-color: #fff;
+    border-color: 1px solid #aaa;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    border-radius: 2px;
+    padding: 0;
+}
+.custom-table .page-item.active .page-link, .custom-table .page-item .page-link:hover {
+    color: #fff;
+    background-color: #18541d;
+    border-color: #18541d;
+}
+.custom-table #example_previous a, .custom-table #example_next a {
+    font-size: 0 !important;
+}
+.custom-table .page-item:hover {
+    background: none !important;
+    border: 1px solid transparent !important;
+}
+.custom-table table.dataTable tr.child ul li {
+    border-bottom: 0;
+    padding: 0;
+}
+.custom-table div#example_info, .custom-table .dataTables_paginate  {
+    font-size: 13px;
+    margin: 12px 0;
+}
+.custom-table .dataTables_paginate a {
+    font-size: 13px;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+.custom-table .dataTables_wrapper .dataTables_paginate .paginate_button {
+    border: 1px solid #e5e5e5;
+}
+
+.custom-table .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #ffffff !important;
+    border: 1px solid #18541d;
+    background: #18541d;
+}
+/* .custom-table .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #18541d !important;
+    border: 1px solid transparent;
+    background: rgb(24 84 29 / 20%);
+} */
+.dataTables_length select {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 10px;
+    outline: 0 !important;
+}
+#example_filter input[type="search"] {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 20px;
+    outline-offset: 0px;
+    outline: 0 !important;
+}
+div#example_length, #example_filter label {
+    font-size: 13px;
+}
+.page-header h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+}
+.inventory-list {
+    padding: 0 0 30px;
+}
+.card-1 .card {
+    background: rgb(213 0 0 / 5%);
+    border: 0;
+    color: rgb(213 0 0 );
+}
+.card-2 .card {
+    background: rgb(24 84 29 / 5%);
+    border: 0;
+    color: rgb(24 84 29 );
+}
+.child td {
+    padding-left: 25px !important;
+}
+.dtr-data .action-list {
+    margin: 0 -10px !important;
+}
+.child > ul >li {
+    margin: 0 10px;
+    padding-bottom: 10px !important;
+}
+
+
+

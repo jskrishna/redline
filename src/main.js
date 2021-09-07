@@ -7,6 +7,7 @@ import router from "./router";
 import "./assets/css/main.css";
 import "./assets/css/dataTable.css";
 import "./assets/css/datatable.responsive.css";
+import "./assets/css/responsive.css"
 
 import "./assets/js/jquery";
 import "./assets/js/jquery.dataTable";

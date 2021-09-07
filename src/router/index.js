@@ -36,6 +36,11 @@ const routes = [
     name: "Add Parts",
     component: () => import("../views/AddParts.vue"),
   },
+  {
+  path: "/add-vehicle",
+  name: "Add Vehicle",
+  component: () => import("../views/AddVehicle.vue"),
+  }
 ];
 
 const router = new VueRouter({

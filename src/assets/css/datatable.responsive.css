@@ -6,7 +6,7 @@ table.dataTable.dtr-inline.collapsed tbody th:first-child {
 }
 table.dataTable.dtr-inline.collapsed tbody td:first-child:before,
 table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
-  top: 17px;
+  top: 12px;
   left: 25px;
   height: 16px;
   width: 16px;
@@ -67,10 +67,11 @@ table.dataTable tr.child:hover {
   background: transparent !important;
 }
 table.dataTable tr.child ul {
-  display: inline-block;
+  display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 0 -10px;
   padding: 0;
+  flex-wrap: wrap;
 }
 table.dataTable tr.child ul li {
   border-bottom: 1px solid #efefef;
@@ -86,4 +87,5 @@ table.dataTable tr.child span.dtr-title {
   display: inline-block;
   min-width: 75px;
   font-weight: bold;
+  padding-bottom: 5px;
 }

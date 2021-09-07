@@ -37,7 +37,6 @@
             </b-form-group>
             <div class="text-center mt-35">
               <b-button type="submit" class="custom-btn" @click="login">Login</b-button>
-              <!-- <router-link to="/dashboard">dashboard</router-link> -->
             </div>
           </b-form>
         </div>

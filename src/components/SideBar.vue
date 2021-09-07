@@ -34,43 +34,5 @@ methods:{
 </script>
 
 <style scoped>
-.navbar-brand {
-  width: 100%;
-  display: block;
-  padding: 40px 20px;
-}
-.navbar-brand img {
-  width: 240px;
-}
-.sidebar {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 300px;
-  background: #fff;
-}
-.main-nav {
-  height: calc(100vh - 220px);
-  overflow: auto;
-}
-.main-nav .nav-link {
-  color: #000;
-  font-weight: 600;
-  padding: 20px;
-}
-.main-nav .nav-link img {
-  width: 23px;
-  margin-right: 15px;
-}
-.nav-item.log-out {
-  padding: 0 20px;
-}
-.nav-item.log-out a {
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
-  background: #18541d;
-  padding: 15px;
-  border-radius: 5px;
-}
+
 </style>

@@ -1,0 +1,14 @@
+@media(max-width:1024px) {
+    .action-list li {
+        margin: 0 5px;
+    }
+    .dtr-data .action-list {
+        margin: 0 -5px !important;
+    }
+    .sidebar {
+        width: 250px;
+    }
+    .wrapper {
+        margin-left: 250px;
+    }
+}
