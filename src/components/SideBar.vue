@@ -18,21 +18,26 @@
       </b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="main-logout">
-      <b-nav-item class="log-out" to="" @click="logout">Log Out</b-nav-item>
+      <a
+        href="javascript:void(0)"
+        @click="logout"
+        class="btn custom-btn"
+        class-active=""
+        >Log Out</a
+      >
     </b-navbar-nav>
   </nav>
 </template>
 
 <script>
 export default {
-methods:{
-    logout(){
-     this.$router.push("/");
+  methods: {
+    logout() {
+      this.$router.push("/");
     },
-}
+  },
 };
 </script>
 
 <style scoped>
-
 </style>

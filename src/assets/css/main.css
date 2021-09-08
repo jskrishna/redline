@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 body {
     background: rgb(24 84 29 / 8%);
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
 }
 
 ul {
     margin: 0;
     padding: 0;
 }
+
 li {
     list-style: none;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
@@ -20,41 +25,47 @@ a, a:hover {
     width: 100%;
     display: block;
     padding: 40px 20px;
-  }
-  .navbar-brand img {
+}
+
+.navbar-brand img {
     max-width: 240px;
-  }
-  .sidebar {
+}
+
+.sidebar {
     position: fixed;
     top: 0;
     height: 100%;
-    width: 300px;
+    width: 250px;
     background: #fff;
-  }
-  .main-nav {
+}
+
+.main-nav {
     height: calc(100vh - 220px);
     overflow: auto;
-  }
-  .main-nav .nav-link {
+}
+
+.main-nav .nav-link {
     color: #000;
-    font-weight: 600;
-    padding: 20px;
-  }
-  .main-nav .nav-link img {
+    font-weight: 500;
+    padding: 15px 20px;
+    position: relative;
+    /* height: 55px; */
+}
+
+.main-nav .nav-link img {
+    display: none;
     width: 23px;
     margin-right: 15px;
-  }
-  .nav-item.log-out {
+}
+
+.nav-item.log-out {
     padding: 0 20px;
-  }
-  .nav-item.log-out a {
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    background: #18541d;
-    padding: 15px;
-    border-radius: 5px;
-  }
+}
+
+.navbar-nav.main-logout {
+    padding: 0 20px;
+}
+
 
 /* login css */
 .login-inner {
@@ -64,10 +75,12 @@ a, a:hover {
     flex-direction: column;
     height: 100vh;
 }
+
 .login-header {
     padding-bottom: 30px;
 }
-.login-header a{
+
+.login-header a {
     display: block;
 }
 
@@ -76,33 +89,41 @@ a, a:hover {
     height: auto;
     width: 100%;
 }
+
 .login-box {
-    padding: 35px 50px 50px;
-    min-width: 500px;
-    max-width: 500px;
-    border-radius: 10px;
+    padding: 50px;
+    min-width: 430px;
+    max-width: 430px;
+    /* border-radius: 10px; */
     background: #fff;
 }
+
 .login-box h1 {
     text-align: center;
     padding-bottom: 40px;
     font-size: 30px;
     color: #18541d;
-    font-weight: 600;
+    font-weight: 500;
 }
+
 .form-group label {
     font-size: 14px;
 }
+
 .form-control {
     font-size: 14px;
     height: 45px;
 }
+
 .form-control:focus {
-   outline: none;
-   border-color: #ced4da;
-   box-shadow: none;
+    outline: none;
+    border-color: #ced4da;
+    box-shadow: none;
 }
+
 .custom-btn {
+    border-radius: 0;
+    font-size: 14px;
     background: #18541d;
     padding: 5px 30px;
     min-width: 100px;
@@ -113,33 +134,40 @@ a, a:hover {
     align-items: center;
     justify-content: center;
 }
-.custom-btn:hover {
-    background: #0f3613;
-    color: #fff;
-    border-color: #0f3613;
+
+.custom-btn:hover,
+.vue-form-wizard .navbar .navbar-nav>li>a.wizard-btn,
+.vue-form-wizard .wizard-btn:hover {
+    background: #0f3613 !important;
+    color: #fff !important;
+    border-color: #0f3613 !important;
 }
+
 .mt-35 {
     margin-top: 35px;
 }
+
 .text-center {
     text-align: center;
 }
-.text-center .custom-btn{
-   margin: auto;
+
+.text-center .custom-btn {
+    margin: auto;
+    padding: 5px 40px;
 }
 
 /* dashboard css */
 .wrapper {
-    margin-left: 300px;
     padding: 30px;
-    width: 100%;
+    width: calc(100% - 250px);
     min-height: 100vh;
+    margin-left: auto;
 }
 
 .wrapper>.card {
     padding: 30px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 0;
     height: 100%;
 }
 
@@ -147,43 +175,54 @@ a, a:hover {
     display: inline-block;
     margin: 0 5px;
 }
+
 .action-list svg {
     width: 30px;
 }
+
 .action-list svg {
     width: 100%;
     max-width: 20px;
 }
+
 .act-icon {
     width: 35px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
+
 .view-icon {
     background: rgb(76 174 79 / 15%);
 }
+
 .view-icon svg {
-   fill: #4cae4f;;
+    fill: #4cae4f;
+    ;
 }
 
 .edit-icon {
     background: rgb(91 192 222 / 15%);
 }
+
 .edit-icon svg {
-   fill: rgb(91 192 222);
+    fill: rgb(91 192 222);
 }
+
 .add-icon {
     background: rgb(240 173 78 / 15%);
 }
+
 .add-icon svg {
-   fill: rgb(240 173 78);
+    fill: rgb(240 173 78);
 }
+
 .dtr-data {
     display: block;
 }
+
 .action-list {
     margin: 0 -5px !important;
 }
@@ -194,12 +233,11 @@ a, a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 0 30px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 30px;
 }
-.wizard-header{
+
+.wizard-header {
     display: none !important;
-  }
+}
 
 /* table css */
 .custom-table thead th {
@@ -207,44 +245,69 @@ a, a:hover {
     color: #26662b;
 }
 
-.custom-table table.dataTable tbody th, table.dataTable tbody td {
-    padding: 15px 25px;
+.custom-table table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 15px 20px;
 }
-.custom-table table.dataTable thead th, table.dataTable thead td {
-    padding: 15px 25px;
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper>.card {
+    min-height: calc(100vh - 60px);
+}
+
+.custom-table table.dataTable thead th,
+table.dataTable thead td {
+    padding: 15px 20px;
     border-bottom: 1px solid #e5e5e5;
 }
+
 .custom-table table.dataTable.no-footer {
     border-bottom: 1px solid #e5e5e5;
 }
+
 .custom-table #example_wrapper .row:first-child {
     padding: 25px;
 }
+
 .custom-table #example_wrapper .row:first-child .col-md-6:first-child {
     display: none;
 }
+
 .custom-table .dataTables_wrapper .dataTables_filter {
     text-align: left;
     padding-bottom: 20px;
 }
-.previous, .next {
+
+.previous,
+.next {
     border: 0 !important;
 }
-.previous:hover, .next:hover {
+
+.previous:hover,
+.next:hover {
     background: none !important;
 }
+
 .custom-table #example_wrapper .row:last-child {
     padding: 10px;
 }
+
 .custom-table #example_wrapper .row:last-child .col-md-5:first-child {
     display: none;
 }
+
 .custom-table .pagination li {
     padding: 5px !important;
 }
+
 .custom-table table.dataTable {
     font-size: 14px;
 }
+
 .custom-table .page-item .page-link {
     color: #000;
     background-color: #fff;
@@ -253,43 +316,55 @@ a, a:hover {
     height: 35px;
     font-size: 14px;
     line-height: 35px;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     padding: 0;
 }
-.custom-table .page-item.active .page-link, .custom-table .page-item .page-link:hover {
+
+.custom-table .page-item.active .page-link,
+.custom-table .page-item .page-link:hover {
     color: #fff;
     background-color: #18541d;
     border-color: #18541d;
 }
-.custom-table #example_previous a, .custom-table #example_next a {
+
+.custom-table #example_previous a,
+.custom-table #example_next a {
     font-size: 0 !important;
 }
+
 .custom-table .page-item:hover {
     background: none !important;
     border: 1px solid transparent !important;
 }
+
 .custom-table table.dataTable tr.child ul li {
     border-bottom: 0;
     padding: 0;
 }
-.custom-table div#example_info, .custom-table .dataTables_paginate  {
+
+.custom-table div#example_info,
+.custom-table .dataTables_paginate {
     font-size: 13px;
     margin: 12px 0;
 }
+
 .custom-table .dataTables_paginate a {
     font-size: 13px;
     margin: 0 5px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
+
 .custom-table .dataTables_wrapper .dataTables_paginate .paginate_button {
     border: 1px solid #e5e5e5;
 }
 
-.custom-table .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+.custom-table .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
     color: #ffffff !important;
     border: 1px solid #18541d;
     background: #18541d;
 }
+
 /* .custom-table .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
     color: #18541d !important;
     border: 1px solid transparent;
@@ -297,48 +372,219 @@ a, a:hover {
 } */
 .dataTables_length select {
     border: 1px solid #ddd;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     padding: 10px 10px;
     outline: 0 !important;
 }
+
 #example_filter input[type="search"] {
     border: 1px solid #ddd;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     padding: 10px 20px;
     outline-offset: 0px;
     outline: 0 !important;
 }
-div#example_length, #example_filter label {
+
+div#example_length,
+#example_filter label {
     font-size: 13px;
 }
+
 .page-header h1 {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
+
 .inventory-list {
     padding: 0 0 30px;
 }
+
 .card-1 .card {
     background: rgb(213 0 0 / 5%);
     border: 0;
-    color: rgb(213 0 0 );
+    color: rgb(213 0 0);
 }
+
 .card-2 .card {
     background: rgb(24 84 29 / 5%);
     border: 0;
-    color: rgb(24 84 29 );
+    color: rgb(24 84 29);
 }
+
 .child td {
     padding-left: 25px !important;
 }
+
 .dtr-data .action-list {
     margin: 0 -10px !important;
 }
-.child > ul >li {
+
+.child>ul>li {
     margin: 0 10px;
     padding-bottom: 10px !important;
 }
 
+span.stepTitle {
+    margin-top: 15px;
+}
 
+.vue-form-wizard.md .wizard-icon-circle {
+    border-color: #18541d !important;
+}
 
+.wizard-icon-container.square_shape {
+    border-radius: 50% !important;
+}
+
+.wizard-progress-with-circle {
+    padding: 0 15px;
+}
+
+.vue-form-wizard.md .wizard-icon-circle {
+    border-radius: 50% !important;
+}
+
+li.active .square_shape {
+    border: transparent;
+}
+
+ul.wizard-nav.wizard-nav-pills,
+.wizard-progress-with-circle {
+    display: none !important;
+}
+
+.vue-form-wizard .navbar .navbar-nav>li>a.wizard-btn,
+.vue-form-wizard .wizard-btn {
+    font-weight: normal;
+    height: 45px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+div#opacity-0>label {
+    opacity: 0;
+}
+
+.custom-file-label {
+    background: rgb(24 84 29 / 10%);
+    padding: 30px;
+    color: #18541d;
+    border: 1px dashed rgb(24 84 29 / 30%);
+    height: auto;
+    text-align: center;
+    line-height: initial;
+}
+
+.custom-file-label::after {
+    display: none;
+}
+
+.custom-file {
+    height: 80px;
+}
+
+div#gallery img {
+    /* border-radius: 10px; */
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+    width: 150px;
+}
+
+.custom-file-input:focus~.custom-file-label {
+    box-shadow: none;
+    border-color: rgb(24 84 29 / 30%);
+
+}
+
+div#gallery img+img {
+    margin-left: 15px;
+}
+
+div#gallery {
+    margin-bottom: 10px;
+}
+
+.vue-form-wizard .wizard-tab-content {
+    min-height: 100px;
+    border: 1px solid rgb(225 225 225);
+    padding: 30px;
+    /* border-radius: 5px; */
+
+}
+
+.custom-control-label span {
+    position: relative;
+    top: 2px;
+}
+
+span.dtr-data {
+    padding: 0 5px;
+}
+
+.vue-form-wizard .wizard-card-footer {
+    margin-top: 20px;
+    padding: 0 !important;
+}
+
+.dataTables_wrapper {
+    /* border-radius: 5px; */
+    min-height: 100px;
+    padding: 30px 20px 10px;
+    border: 1px solid rgb(225 225 225);
+}
+
+.delete-icon {
+    background: rgb(255 0 0 / 20%);
+}
+
+.delete-icon svg {
+    width: 15px;
+    fill: rgb(255 0 0 / 70%);
+}
+
+.nav-link.router-link-exact-active.router-link-active:after {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background: #18541d;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav-link.router-link-exact-active.router-link-active {
+    background: #ecf1ed;
+    color: #18541d;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.badge,
+.card,
+.custom-checkbox .custom-control-label::before,
+.vue-form-wizard .wizard-btn {
+    border-radius: 0 !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #18541d;
+    background-color: #18541d;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before,
+.custom-control-input:checked~.custom-control-label::before,
+.custom-control-label::after {
+    box-shadow: none !important;
+}
+
+.vue-form-wizard .navbar .navbar-nav>li>a.wizard-btn,
+.vue-form-wizard .wizard-btn {
+    font-weight: 500 !important;
+}
+
+b,
+strong {
+    font-weight: 500;
+}

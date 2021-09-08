@@ -1,9 +1,10 @@
+
 <template>
   <div class="add-vehicle">
     <div class="page-header">
-      <h1>Add Individual Parts to Inventory</h1>
+      <h1>Add part to inventory From the following vehicle</h1>
       <div class="add-btn">
-        <router-link class="btn custom-btn" class-active="" to="/part-list"
+        <router-link class="btn custom-btn" class-active="" to="/car-list"
           >Back</router-link
         >
       </div>

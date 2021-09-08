@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    <div class="container-fluid" v-if="showSidebar">
-     <div class="row">
-        <div>
-        <SideBar />
+    <div class="main-wrapper" v-if="showSidebar">
+      <SideBar />
+      <main class="wrapper">
+        <div class="card">
+          <router-view />
         </div>
-        <main class="wrapper">
-          <div class="card">
-            <router-view />
-          </div>
-        </main>
-      </div>
+      </main>
     </div>
-    <div class="container-fluid" v-else>
+    <div class="main-wrapper" v-else>
       <router-view />
     </div>
   </div>
@@ -22,11 +18,9 @@ import SideBar from "@/components/SideBar.vue";
 
 export default {
   components: { SideBar },
-    computed: {
+  computed: {
     showSidebar() {
-      return (
-        this.$route.name !== "Login"
-      );
+      return this.$route.name !== "Login";
     },
   },
 };

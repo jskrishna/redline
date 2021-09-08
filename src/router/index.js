@@ -27,20 +27,36 @@ const routes = [
     component: () => import("../views/PartList.vue"),
   },
   {
-    path: '/edit-vehicle/:id',
+    path: "/edit-vehicle/:id",
     name: "Edit Vehicle",
     component: () => import("../views/EditVehicle.vue"),
   },
   {
-    path: '/add-parts',
+    path: "/car-detail/:id",
+    name: "Car Detail",
+    component: () => import("../views/CarDetail.vue"),
+  },
+
+  {
+    path: "/add-vehicle-part/:id",
+    name: "Add Vehicle Part",
+    component: () => import("../views/VehiclePart.vue"),
+  },
+  {
+    path: "/edit-part/:id",
+    name: "Edit Part",
+    component: () => import("../views/EditPart.vue"),
+  },
+  {
+    path: "/add-parts",
     name: "Add Parts",
     component: () => import("../views/AddParts.vue"),
   },
   {
-  path: "/add-vehicle",
-  name: "Add Vehicle",
-  component: () => import("../views/AddVehicle.vue"),
-  }
+    path: "/add-vehicle",
+    name: "Add Vehicle",
+    component: () => import("../views/AddVehicle.vue"),
+  },
 ];
 
 const router = new VueRouter({

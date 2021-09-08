@@ -1,7 +1,7 @@
 <template>
   <div class="add-vehicle">
     <div class="page-header">
-      <h1>Add Individual Parts to Inventory</h1>
+      <h1>Edit Part</h1>
       <div class="add-btn">
         <router-link class="btn custom-btn" class-active="" to="/part-list"
           >Back</router-link

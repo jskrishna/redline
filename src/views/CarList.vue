@@ -8,20 +8,17 @@
         >
       </div>
     </div>
+
     <div class="inventory-list">
       <div class="row">
-        <div class="col-md-3 card-1">
+        <div class="col-lg-4 col-md-6 card-1">
           <b-card title="Inventory Value" class="mb-2">
-            <b-card-text>
-             $200
-            </b-card-text>
+            <b-card-text> $200 </b-card-text>
           </b-card>
         </div>
-        <div class="col-md-3 card-2">
+        <div class="col-lg-4 col-md-6 card-2">
           <b-card title="Inventory Value" class="mb-2">
-            <b-card-text>
-            3000
-            </b-card-text>
+            <b-card-text> 3000 </b-card-text>
           </b-card>
         </div>
       </div>
@@ -56,11 +53,11 @@
             <td>
               <ul class="action-list">
                 <li>
-                  <a
-                    href=""
+                  <router-link
                     class="act-icon view-icon"
                     v-b-tooltip.hover
                     title="See Parts"
+                    :to="{ name: 'Car Detail', params: { id: item.id } }"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -84,14 +81,14 @@
                         </g>
                       </g>
                     </svg>
-                  </a>
+                  </router-link>
                 </li>
                 <li>
-                  <a
-                    href=""
+                  <router-link
                     class="act-icon edit-icon"
                     v-b-tooltip.hover
                     title="Edit"
+                    :to="{ name: 'Edit Vehicle', params: { id: item.id } }"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -116,14 +113,14 @@
                         </g>
                       </g>
                     </svg>
-                  </a>
+                  </router-link>
                 </li>
                 <li>
-                  <a
-                    href=""
+                  <router-link
                     class="act-icon add-icon"
                     v-b-tooltip.hover
-                    title="Add Vehicle"
+                    title="Add Parts"
+                    :to="{ name: 'Add Vehicle Part', params: { id: item.id } }"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +135,7 @@
                         />
                       </g>
                     </svg>
-                  </a>
+                  </router-link>
                 </li>
               </ul>
             </td>
