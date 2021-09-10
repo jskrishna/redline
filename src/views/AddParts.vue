@@ -1,7 +1,7 @@
 <template>
   <div class="add-vehicle">
     <div class="page-header">
-      <h1>Add Individual Parts to Inventory</h1>
+      <h1>{{ $route.name }}</h1>
       <div class="add-btn">
         <router-link class="btn custom-btn" class-active="" to="/part-list"
           >Back</router-link
@@ -11,6 +11,7 @@
     <div class="add-form">
       <form-wizard shape="square" color="#18541d">
         <tab-content title="Individual parts">
+          <h3>Add Individual Parts to Inventory</h3>
           <b-form>
             <b-row>
               <b-col class="col-lg-4 col-md-6 col-sm-12">
@@ -183,7 +184,6 @@
                 >
                   <b-form-textarea
                     id="textarea"
-                    v-model="text"
                     placeholder="Enter something..."
                     rows="3"
                     max-rows="6"
@@ -194,6 +194,7 @@
           </b-form>
         </tab-content>
         <tab-content title="Images">
+          <h3>Upload Parts Image</h3>
           <b-form>
             <b-row>
               <b-col class="col-lg-4 col-md-6 col-sm-12">
@@ -208,7 +209,7 @@
                   label-for="input-01"
                 >
                   <b-form-file
-                    multiple="true"
+                    multiple
                     accept="image/*"
                     placeholder="Choose a file or drop it here..."
                     drop-placeholder="Drop file here..."

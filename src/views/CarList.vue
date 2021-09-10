@@ -54,9 +54,8 @@
               <ul class="action-list">
                 <li>
                   <router-link
-                    class="act-icon view-icon"
-                    v-b-tooltip.hover
-                    title="See Parts"
+                    class="act-icon view-icon tooltips"
+                    data-tooltip="See Parts"
                     :to="{ name: 'Car Detail', params: { id: item.id } }"
                   >
                     <svg
@@ -85,9 +84,8 @@
                 </li>
                 <li>
                   <router-link
-                    class="act-icon edit-icon"
-                    v-b-tooltip.hover
-                    title="Edit"
+                    class="act-icon edit-icon tooltips"
+                    data-tooltip="Edit"
                     :to="{ name: 'Edit Vehicle', params: { id: item.id } }"
                   >
                     <svg
@@ -117,9 +115,8 @@
                 </li>
                 <li>
                   <router-link
-                    class="act-icon add-icon"
-                    v-b-tooltip.hover
-                    title="Add Parts"
+                    class="act-icon add-icon tooltips" 
+                    data-tooltip="Add Parts"
                     :to="{ name: 'Add Vehicle Part', params: { id: item.id } }"
                   >
                     <svg

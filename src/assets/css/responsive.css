@@ -1,3 +1,15 @@
+@media(max-width:1240px) {
+    .information-sec .list-group .col {
+        min-width: 50%;
+        margin-bottom: 10px;
+    }
+    .custom-file-label {
+        padding: 10px;
+    }
+    .custom-file {
+        height: 70px;
+    }
+}
 @media(max-width:1024px) {
     .action-list li {
         margin: 0 5px;
@@ -10,5 +22,305 @@
     }
     .wrapper {
         margin-left: 250px;
+    }
+    .page-header h1 {
+        font-size: 20px;
+    }
+}
+@media(max-width:991px){
+    .sidebar {
+        width: 60px;
+    }
+    .main-nav .nav-link img {
+        display: block;
+        margin: auto;
+        width: 20px;
+    }
+    .navbar-brand .res-logo{
+        display: block;
+        width: 100%;
+    }
+    
+    .navbar-brand .logo { 
+        display: none;
+    }
+    .main-nav .nav-link {
+        padding: 15px 10px;
+    }
+    .main-nav .nav-link span {
+        display: none;
+    }
+    .wrapper {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+    }
+    .navbar-brand {
+        padding: 25px 10px;
+    }
+    .main-logout a img {
+        display: block;
+    }
+    .main-logout a.custom-btn {
+        background: transparent;
+        padding: 0;
+        min-width: auto;
+        border: 0;
+        font-size: 0;
+    }
+    .navbar-nav.main-logout {
+        padding: 0 10px;
+    }
+    .main-nav {
+        height: calc(100vh - 150px);
+    }
+    div#opacity-0>label {
+        display: none !important;
+    }
+    .information-sec .list-group-item {
+        display: block;
+    }
+    .information-sec .list-group .col {
+        margin-bottom: 0;
+    }
+    .list-group-item label {
+        margin-bottom: 3px;
+    }
+}
+
+@media(max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+    .sidebar {
+        position: fixed;
+        top: calc(100% - 50px );
+        width: 100%;
+        display: flex;
+        z-index: 99;
+        bottom: 0;
+        justify-content: space-between;
+    }
+    label {
+        margin-bottom: 3px;
+    }
+    .wrapper {
+        margin-left: 0;
+        width: 100% ;
+        padding: 0px;
+        margin-bottom: 50px;
+        max-height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
+    overflow: auto;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .main-nav {
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-shadow: 0 -5px 30px rgb(0 0 0 / 10%);
+    }
+    .main-nav li {
+        height: 100%;
+        flex: 1;
+    }
+    .nav-link.router-link-exact-active.router-link-active:after {
+       display: none;
+    }
+    .wrapper>.card {
+        padding: 15px;
+        min-height: calc(100vh - 50px);
+    }
+    .navbar-nav.main-logout {
+        display: none;
+    }
+    .main-nav .nav-link {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
+    .page-header h1 {
+        font-size: 16px;
+    }
+    .custom-btn {
+        font-size: 12px;
+        padding: 5px 15px;
+        min-width: 90px;
+        height: 35px;
+    }
+    .inventory-list .row {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .inventory-list .card-title {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .inventory-list .card-body {
+        padding: 10px 15px;
+    }
+    .inventory-list .row .card-1 {
+        padding-right:7px;
+    } 
+    .inventory-list .row .card-2 {
+        padding-left:7px;
+    } 
+    .dataTables_wrapper {
+        padding: 0;
+        border: 0;
+    }
+    .card-text:last-child {
+        font-size: 12px;
+    }
+    .page-header {
+        padding: 0 15px 15px;
+        border-bottom: 1px solid #ddd;
+        margin: 0 -15px;
+        margin-bottom: 15px;
+    }
+    .inventory-list {
+        padding: 0;
+    }
+    div#example_length {
+        display: none;
+    }
+    .custom-table .dataTables_wrapper .dataTables_filter {
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    #example_filter label {
+        font-size: 0;
+        width: 100%;
+    }
+    #example_filter input[type="search"] {
+        font-size: 12px;
+        margin-left: 0;
+        width: 100%;
+        padding: 8px 25px 8px 12px;
+    }
+    .custom-table table.dataTable, .form-group label {
+        font-size: 12px;
+    }
+    .custom-table table.dataTable thead th, table.dataTable thead td {
+        padding: 10px 15px;
+    }
+    table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
+        padding-left: 45px;
+    }
+    table.dataTable.dtr-inline.collapsed tbody td:first-child:before, table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
+        left: 15px;
+        height: 12px;
+        width: 12px;
+        line-height: 12px;
+    }
+    .custom-table .dataTables_paginate a {
+        font-size: 11px;
+    }
+    .custom-table div#example_info {
+        display: none;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        padding: 2px 8px;
+    }
+    .login-inner {
+        padding: 0 30px;
+        background: #fff;
+    }
+    .login-box {
+        padding: 0px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .login-header img {
+        max-width: 200px;
+    }
+    .form-control {
+        font-size: 12px;
+        height: 40px;
+    }
+    .main-nav {
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mob-logout {
+        display: block;
+    }
+    .wizard-tab-container .col {
+        min-width: 100%;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+    .vue-form-wizard .wizard-tab-content {
+        padding: 0 !important;
+        border: 0;
+        min-height: auto !important;
+    }
+    .vue-form-wizard .navbar .navbar-nav>li>a.wizard-btn, .vue-form-wizard .wizard-btn {
+        font-size: 12px !important;
+        min-width: 90px !important;
+        height: 35px;
+    }
+    .vue-form-wizard .wizard-card-footer {
+        margin-top: 10px;
+    }
+    .custom-file {
+        height: 40px;
+    }
+    .custom-file-label {
+        padding: 15px;
+    }
+    .wizard-tab-container h3 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    table.dataTable tr.child ul {
+        display: flex;
+        list-style-type: none;
+        margin: -5px -20px;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    td.child > ul > li {
+        background: rgb(221 221 221 / 50%);
+        flex: 1;
+        margin: 5px;
+        padding: 8px !important;
+    }
+    .action-list li {
+        margin: 5px;
+    }
+    .act-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .action-list svg {
+        max-width: 15px;
+    }
+    #example_filter label:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 36px;
+        height: 33px;
+        background: #fff;
+        background-image: url(../search-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+    }
+    div#gallery img {
+        min-height: 100px;
+        max-height: 100px;
+        min-width: calc(50% - 20px);
     }
 }

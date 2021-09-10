@@ -27,8 +27,12 @@ a:hover {
     padding: 40px 20px;
 }
 
-.navbar-brand img {
+.navbar-brand .logo {
     max-width: 240px;
+}
+.navbar-brand .res-logo {
+    display: none;
+    max-width: 40px;
 }
 
 .sidebar {
@@ -65,6 +69,14 @@ a:hover {
 .navbar-nav.main-logout {
     padding: 0 20px;
 }
+.main-logout a img {
+    display: none;
+    width: 100%;
+    max-width: 20px;
+}
+.mob-logout {
+    display: none;
+}
 
 
 /* login css */
@@ -74,6 +86,7 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    padding: 0 15px;
 }
 
 .login-header {
@@ -225,6 +238,8 @@ a:hover {
 
 .action-list {
     margin: 0 -5px !important;
+    align-items: center;
+    display: flex;
 }
 
 /* car list page */
@@ -470,9 +485,12 @@ div#opacity-0>label {
     padding: 30px;
     color: #18541d;
     border: 1px dashed rgb(24 84 29 / 30%);
-    height: auto;
     text-align: center;
     line-height: initial;
+    border-radius: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .custom-file-label::after {
@@ -480,13 +498,25 @@ div#opacity-0>label {
 }
 
 .custom-file {
-    height: 80px;
+    height: 100px;
+}
+.select-image img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    object-position: top;
 }
 
 div#gallery img {
     /* border-radius: 10px; */
     box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
-    width: 150px;
+    max-width: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    margin: 10px;
+    min-width: 140px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .custom-file-input:focus~.custom-file-label {
@@ -495,20 +525,21 @@ div#gallery img {
 
 }
 
-div#gallery img+img {
-    margin-left: 15px;
-}
-
 div#gallery {
+    margin: 0 -10px;
     margin-bottom: 10px;
 }
 
 .vue-form-wizard .wizard-tab-content {
     min-height: 100px;
     border: 1px solid rgb(225 225 225);
-    padding: 30px;
+    padding: 20px;
     /* border-radius: 5px; */
 
+}
+.wizard-tab-container h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .custom-control-label span {
@@ -587,4 +618,110 @@ span.dtr-data {
 b,
 strong {
     font-weight: 500;
+}
+.information-sec {
+    padding-bottom: 15px;
+}
+.information-sec .list-group-item {
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 5px 0;
+}
+.information-sec .list-group .col {
+    min-width: 33%;
+    margin-bottom: 15px;
+}
+.list-group-item label {
+    margin: 0;
+    min-width: 120px;
+}
+.label-value {
+    background: #e9efe9;
+    width: 100%;
+    color: #18541d;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    font-weight: 500;
+}
+.s-cars-images img {
+    width: 100%;
+    max-width: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+.s-cars-images {
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.s-cars-images > div {
+    margin: 0 10px;
+}
+.select-image {
+    margin-bottom: 10px;
+}
+
+/* tooltip css */
+.tooltips {
+    position: relative;
+  }
+  .tooltips:hover:after{
+    text-transform: none;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    position: absolute;
+    color: #fff;
+    background: #1a1919;
+    padding: 8px 12px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 200px;
+    opacity: 0;
+    pointer-events: none;
+    left: 50%;
+    top: 10px;
+    border-radius: 4px;
+    transform: translate3d(-50%, 0%, 0);
+    transition: all 0.3s ease;
+  }
+  .tooltips:hover:before{
+    border: solid;
+    border-color: #1a1919 transparent;
+    border-width: 7px 6px 0 6px;
+    content: "";
+    left: 50%;
+    bottom: 10px;
+    position: absolute;
+    transform: translate(-50%);
+  }
+  .tooltips:hover:before, .tooltips:hover:after {
+    opacity: 1;
+}
+.tooltips:hover:before {
+    transform: translate3d(-50%, calc(-100% - 18px), 0);
+}
+.tooltips:hover:after {
+    transform: translate3d(-50%, calc(-100% - 16px), 0);
+}
+#example_filter label {
+    position: relative;
+}
+
+
+
+/* modal css */
+.modal-content {
+    border-radius: 0;
+    border: 0;
+}
+#preview img {
+    width: 100%;
+    height: auto;
+}
+button.close:focus {
+    outline: none;
 }

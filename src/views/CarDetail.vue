@@ -1,16 +1,157 @@
 <template>
   <div class="add-vehicle">
     <div class="page-header">
-      <h1>{{ $route.name }}</h1>
+      <h1>Information & Parts List</h1>
       <div class="add-btn">
         <router-link class="btn custom-btn" class-active="" to="/car-list"
           >Back</router-link
         >
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">1</div>
-      <div class="col-md-6">2</div>
+    <div class="information-sec">
+      <div class="row">
+        <div class="col-md-12">
+          <b-list-group>
+            <b-row>
+              <b-col>
+                <b-list-group-item>
+                  <label>Vin</label>
+                  <div class="label-value">1GN3NK34434</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Sequence</label>
+                  <div class="label-value">20</div>
+                </b-list-group-item>
+              </b-col >
+                <b-col>
+                <b-list-group-item>
+                  <label>Stock #</label>
+                  <div class="label-value">0515/APP- SANBAR/20</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Year</label>
+                  <div class="label-value">2014</div>
+                </b-list-group-item>
+              </b-col>
+               <b-col>
+                <b-list-group-item>
+                  <label>Make</label>
+                  <div class="label-value">BMW</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Modal</label>
+                  <div class="label-value">740 IL</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Vehical Type</label>
+                  <div class="label-value">Sedan</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Body Type</label>
+                  <div class="label-value">Sedan</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>NO. Doors</label>
+                  <div class="label-value">4</div>
+                </b-list-group-item>
+              </b-col>
+               <b-col>
+                <b-list-group-item>
+                  <label>Engine Name</label>
+                  <div class="label-value">4515214</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Engine ID</label>
+                  <div class="label-value">TD436473</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Country of Manufacturing</label>
+                  <div class="label-value">Germany</div>
+                </b-list-group-item>
+              </b-col>
+               <b-col>
+                <b-list-group-item>
+                  <label>Transmission ID</label>
+                  <div class="label-value">4515214</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Trim</label>
+                  <div class="label-value">IL</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Color</label>
+                  <div class="label-value">Black</div>
+                </b-list-group-item>
+              </b-col>
+               <b-col>
+                <b-list-group-item>
+                  <label>Miles</label>
+                  <div class="label-value">120,000</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Purchase Source</label>
+                  <div class="label-value">$4520.30</div>
+                </b-list-group-item>
+              </b-col>
+              <b-col>
+                <b-list-group-item>
+                  <label>Licence Plate</label>
+                  <div class="label-value">VED3253</div>
+                </b-list-group-item>
+              </b-col>
+               <b-col class=" col-md-4">
+                <b-list-group-item>
+                  <label>Lic. Expiration</label>
+                  <div class="label-value">5/201/2022</div>
+                </b-list-group-item>
+              </b-col>
+            </b-row>
+             <b-row>
+               <b-col class="">
+                <b-list-group-item>
+                  <label>Images</label>
+                  <div class="s-cars-images">
+                  <div>
+                    <img src="https://www.drivespark.com/images/2020-05/bmw-8-series-gran-coupe-exterior-11.jpg" alt="">
+                  </div>
+                  <div>
+                    <img src="https://www.drivespark.com/images/2020-05/bmw-8-series-gran-coupe-exterior-11.jpg" alt="">
+                  </div>
+                  <div>
+                    <img src="https://www.drivespark.com/images/2020-05/bmw-8-series-gran-coupe-exterior-11.jpg" alt="">
+                  </div>
+                   <div>
+                    <img src="https://www.drivespark.com/images/2020-05/bmw-8-series-gran-coupe-exterior-11.jpg" alt="">
+                  </div>
+                  </div>
+                </b-list-group-item>
+              </b-col>
+            </b-row>
+          </b-list-group>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -52,11 +193,9 @@
                 <td>
                   <ul class="action-list">
                     <li>
-                      <a
-                        href=""
-                        class="act-icon view-icon"
-                        v-b-tooltip.hover
-                        title="Part Images"
+                      <a href="#"
+                        class="act-icon view-icon tooltips"
+                        data-tooltip="Part Images"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +213,8 @@
                     </li>
                     <li>
                       <router-link
-                        class="act-icon edit-icon"
+                        class="act-icon edit-icon tooltips"
+                        data-tooltip="Edit"
                         :to="{ name: 'Edit Part', params: { id: item.id } }"
                       >
                         <svg
@@ -103,11 +243,9 @@
                       </router-link>
                     </li>
                     <li>
-                      <a
-                        href=""
-                        class="act-icon delete-icon"
-                        v-b-tooltip.hover
-                        title="Delete"
+                      <a href="#"
+                        class="act-icon delete-icon tooltips"
+                        data-tooltip="Delete"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

@@ -11,9 +11,10 @@
     <div class="add-form">
       <form-wizard shape="square" color="#18541d">
         <tab-content title="Individual parts">
+            <h3>Add Vehicle Details</h3>
           <b-form>
             <b-row>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-0"
                   label="Vin"
@@ -28,7 +29,7 @@
                 </b-form-group>
               </b-col>
 
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-2"
                   label="Year"
@@ -43,7 +44,7 @@
                 </b-form-group>
               </b-col>
 
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-3"
                   label="Make"
@@ -57,7 +58,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-4"
                   label="Modal"
@@ -71,7 +72,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-5"
                   label="Vehicle Type"
@@ -85,7 +86,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-6"
                   label="Body Type"
@@ -99,7 +100,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-7"
                   label="No. Doors"
@@ -113,7 +114,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-8"
                   label="Engine Name"
@@ -127,7 +128,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-9"
                   label="Engine ID"
@@ -141,7 +142,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Country of Manuf."
@@ -155,7 +156,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Transmission Id"
@@ -169,7 +170,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Trim"
@@ -183,7 +184,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Color"
@@ -197,7 +198,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Miles"
@@ -211,7 +212,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Purchase Source"
@@ -225,7 +226,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Purchase Price"
@@ -239,7 +240,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="License Plate"
@@ -253,7 +254,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+              <b-col class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <b-form-group
                   id="input-group-10"
                   label="Lic. Expiration"
@@ -267,7 +268,7 @@
                   ></b-form-input>
                 </b-form-group>
               </b-col>
-              <b-col class="col-lg-12 col-md-6 col-sm-12">
+              <b-col class="col-lg-12 col-md-12 ">
                 <b-form-group
                   id="input-group-10"
                   label="Description Notes"
@@ -286,8 +287,9 @@
           </b-form>
         </tab-content>
         <tab-content title="Images">
+           <h3>Upload Vehicle Images</h3>
           <b-form>
-            <b-row>
+            <b-row>             
               <b-col class="col-sm-12">
                 <div><span id="msg"></span></div>
                 <div class="upload-images-wrapper row">
@@ -301,7 +303,7 @@
                         @change="onFileChangeF"
                       ></b-form-file>
                     </b-form-group>
-                    <div id="front"></div>
+                    <div id="front" class="select-image"></div>
                   </div>
 
                   <div class="upload-images col-md-3">
@@ -314,7 +316,7 @@
                         @change="onFileChangeB"
                       ></b-form-file>
                     </b-form-group>
-                    <div id="back"></div>
+                    <div id="back" class="select-image"></div>
                   </div>
 
                   <div class="upload-images col-md-3">
@@ -327,7 +329,7 @@
                         @change="onFileChangeR"
                       ></b-form-file>
                     </b-form-group>
-                    <div id="right"></div>
+                    <div id="right" class="select-image"></div>
                   </div>
 
                   <div class="upload-images col-md-3">
@@ -340,7 +342,7 @@
                         @change="onFileChangeL"
                       ></b-form-file>
                     </b-form-group>
-                    <div id="left"></div>
+                    <div id="left" class="select-image"></div>
                   </div>
                 </div>
               </b-col>

@@ -275,7 +275,6 @@
                 >
                   <b-form-textarea
                     id="textarea"
-                    v-model="text"
                     placeholder="Enter something..."
                     rows="3"
                     max-rows="6"
@@ -287,40 +286,64 @@
         </tab-content>
         <tab-content title="Images">
           <b-form>
-            <b-row>
-              <b-col class="col-lg-4 col-md-6 col-sm-12">
+            <b-row>             
+              <b-col class="col-sm-12">
                 <div><span id="msg"></span></div>
-                <span class="mb-2 d-block"><b>Front</b> </span>
-                <b-form-group
-                  v-for="(input, k) in inputs"
-                  :key="k"
-                  id="input-group-01"
-                  label-for="input-01"
-                >
-                  <b-form-file
-                    accept="image/*"
-                    placeholder="Choose a file or drop it here..."
-                    drop-placeholder="Drop file here..."
-                    @change="onFileChange"
-                  ></b-form-file>
-                </b-form-group>
-                <b-form-group
-                  v-for="(input, k) in inputs"
-                  :key="k"
-                  id="input-group-01"
-                  label-for="input-01"
-                >
-                  <b-form-file
-                    accept="image/*"
-                    placeholder="Choose a file or drop it here..."
-                    drop-placeholder="Drop file here..."
-                    @change="onFileChange"
-                  ></b-form-file>
-                </b-form-group>
+                <div class="upload-images-wrapper row">
+                  <div class="upload-images col-md-3">
+                    <span class="mb-2 d-block"><b>Front</b> </span>
+                    <b-form-group id="input-group-01" label-for="input-01">
+                      <b-form-file
+                        accept="image/*"
+                        placeholder="Choose a file or drop it here..."
+                        drop-placeholder="Drop file here..."
+                        @change="onFileChangeF"
+                      ></b-form-file>
+                    </b-form-group>
+                    <div id="front" class="select-image"></div>
+                  </div>
+
+                  <div class="upload-images col-md-3">
+                    <span class="mb-2 d-block"><b>Back</b> </span>
+                    <b-form-group id="input-group-01" label-for="input-01">
+                      <b-form-file
+                        accept="image/*"
+                        placeholder="Choose a file or drop it here..."
+                        drop-placeholder="Drop file here..."
+                        @change="onFileChangeB"
+                      ></b-form-file>
+                    </b-form-group>
+                    <div id="back" class="select-image"></div>
+                  </div>
+
+                  <div class="upload-images col-md-3">
+                    <span class="mb-2 d-block"><b>Right</b> </span>
+                    <b-form-group id="input-group-01" label-for="input-01">
+                      <b-form-file
+                        accept="image/*"
+                        placeholder="Choose a file or drop it here..."
+                        drop-placeholder="Drop file here..."
+                        @change="onFileChangeR"
+                      ></b-form-file>
+                    </b-form-group>
+                    <div id="right" class="select-image"></div>
+                  </div>
+
+                  <div class="upload-images col-md-3">
+                    <span class="mb-2 d-block"><b>Left</b> </span>
+                    <b-form-group id="input-group-01" label-for="input-01">
+                      <b-form-file
+                        accept="image/*"
+                        placeholder="Choose a file or drop it here..."
+                        drop-placeholder="Drop file here..."
+                        @change="onFileChangeL"
+                      ></b-form-file>
+                    </b-form-group>
+                    <div id="left" class="select-image"></div>
+                  </div>
+                </div>
               </b-col>
             </b-row>
-
-            <div id="gallery"></div>
           </b-form>
         </tab-content>
       </form-wizard>
@@ -345,20 +368,37 @@ export default {
           file: "",
         },
       ],
-      files_url: "",
-      count: 1,
+      front: "",
+      back: "",
+      right: "",
+      left: "",
     };
   },
   mounted() {},
-  methods: {
-    onFileChange(e) {
-      $("#gallery").append(
-        "<img id='" + "file" + this.count + "' src='' alt=''>"
-      );
+   methods: {
+    onFileChangeF(e) {
+      $("#front").append("<img class='front' src='' alt=''>");
       const file = e.target.files[0];
-      this.files_url = URL.createObjectURL(file);
-      $("#file" + this.count).attr("src", this.files_url);
-      this.count += 1;
+      this.front = URL.createObjectURL(file);
+      $(".front").attr("src", this.front);
+    },
+    onFileChangeR(e) {
+      $("#right").append("<img class='right' src='' alt=''>");
+      const file = e.target.files[0];
+      this.right = URL.createObjectURL(file);
+      $(".right").attr("src", this.right);
+    },
+    onFileChangeL(e) {
+      $("#left").append("<img class='left' src='' alt=''>");
+      const file = e.target.files[0];
+      this.left = URL.createObjectURL(file);
+      $(".left").attr("src", this.left);
+    },
+    onFileChangeB(e) {
+      $("#back").append("<img class='back' src='' alt=''>");
+      const file = e.target.files[0];
+      this.back = URL.createObjectURL(file);
+      $(".back").attr("src", this.back);
     },
   },
 };

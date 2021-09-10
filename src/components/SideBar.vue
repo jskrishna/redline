@@ -1,7 +1,8 @@
 <template>
   <nav id="sidebarMenu" class="sidebar">
-    <b-navbar-brand href="#">
-      <img src="../assets/logo.svg" alt="" />
+    <b-navbar-brand href="/">
+      <img class="logo" src="../assets/logo.svg" alt="" />
+       <img class="res-logo" src="../assets/res-logo.svg" alt="" />
     </b-navbar-brand>
     <b-navbar-nav class="main-nav">
       <b-nav-item to="/dashboard">
@@ -16,6 +17,9 @@
         <img src="../assets/part.svg" alt="" />
         <span>Part List</span>
       </b-nav-item>
+      <b-nav-item class="mob-logout" @click="logout">
+        <img src="../assets/logout.svg" alt="">
+      </b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="main-logout">
       <a
@@ -23,7 +27,7 @@
         @click="logout"
         class="btn custom-btn"
         class-active=""
-        >Log Out</a
+        >Log Out <img src="../assets/logout.svg" alt=""></a
       >
     </b-navbar-nav>
   </nav>

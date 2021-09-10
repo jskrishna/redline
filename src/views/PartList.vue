@@ -61,10 +61,9 @@
               <ul class="action-list">
                 <li>
                   <a
-                    href=""
-                    class="act-icon view-icon"
-                    v-b-tooltip.hover
-                    title="Part Images"
+                    href="Javascript:void(0)"
+                    class="act-icon view-icon tooltips"
+                    data-tooltip="Part Images"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,10 +81,10 @@
                 </li>
                 <li>
                   <router-link
-                    class="act-icon edit-icon"
+                    class="act-icon edit-icon tooltips"
+                    data-tooltip="Edit"
                     :to="{ name: 'Edit Part', params: { id: item.id } }"
-                  >
-                    <svg
+                    ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16.258"
                       height="16.256"
@@ -113,9 +112,8 @@
                 <li>
                   <a
                     href=""
-                    class="act-icon delete-icon"
-                    v-b-tooltip.hover
-                    title="Delete"
+                    class="act-icon delete-icon tooltips"
+                    data-tooltip="Delete"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +156,7 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
         {
           id: "2",
@@ -169,6 +168,7 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
         {
           id: "3",
@@ -180,6 +180,7 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
         {
           id: "4",
@@ -191,6 +192,7 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
         {
           id: "5",
@@ -202,6 +204,7 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
         {
           id: "1",
@@ -213,6 +216,7 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
         {
           id: "2",
@@ -224,100 +228,18 @@ export default {
           Recommended_Sales: "$520",
           Part_Grade: "A",
           Warranty: "15 days",
-        },
-        {
-          id: "3",
-          Stock: "0155220",
-          Year_Make_Model: "2014",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "4",
-          Stock: "0155220",
-          Year_Make_Model: "2014",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "5",
-          Stock: "0155220",
-          Year_Make_Model: "2020",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "1",
-          Stock: "0155220",
-          Year_Make_Model: "2014",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "2",
-          Stock: "0155220",
-          Year_Make_Model: "2014",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "3",
-          Stock: "0155220",
-          Year_Make_Model: "2014",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "4",
-          Stock: "0155220",
-          Year_Make_Model: "2014",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
-        },
-        {
-          id: "5",
-          Stock: "0155220",
-          Year_Make_Model: "2020",
-          $Const: "$2500",
-          Parts: "320",
-          Parts_Value: "$550",
-          Recommended_Sales: "$520",
-          Part_Grade: "A",
-          Warranty: "15 days",
+          img:'https://wallpaperaccess.com/full/13652.jpg'
         },
       ],
+      imgSrc: null,
     };
   },
   mounted() {
-    $("#example").DataTable();
-  },
+    $("#example").DataTable(
+      {
+        responsive: true
+      }
+    );
+  }
 };
 </script>

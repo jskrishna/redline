@@ -183,7 +183,6 @@
                 >
                   <b-form-textarea
                     id="textarea"
-                    v-model="text"
                     placeholder="Enter something..."
                     rows="3"
                     max-rows="6"
@@ -208,7 +207,7 @@
                   label-for="input-01"
                 >
                   <b-form-file
-                    multiple="true"
+                    multiple
                     accept="image/*"
                     placeholder="Choose a file or drop it here..."
                     drop-placeholder="Drop file here..."
@@ -217,7 +216,6 @@
                 </b-form-group>
               </b-col>
             </b-row>
-
             <div id="gallery"></div>
           </b-form>
         </tab-content>
@@ -250,19 +248,23 @@ export default {
   mounted() {},
   methods: {
     onFileChange(e) {
-      $("#gallery").append(
+      if(this.count == 9){
+        $('#msg').append('you can upload only 8 images.').fadeOut(5000);
+      }else{
+        $("#gallery").append(
         "<img id='" + "file" + this.count + "' src='' alt=''>"
       );
       const file = e.target.files[0];
       this.files_url = URL.createObjectURL(file);
       $("#file" + this.count).attr("src", this.files_url);
       this.count += 1;
+      }
     },
   },
 };
 </script>
 <style scoped>
 #msg {
-  color: brown;
+  color: rgb(250, 0, 0);
 }
 </style>
